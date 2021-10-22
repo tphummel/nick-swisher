@@ -86,8 +86,8 @@ if (isCloudFlareWorker) {
         apiversion: '1',
         author: 'tphummel',
         color: '#888888',
-        head: 'viper',
-        tail: 'rattle',
+        head: 'happy',
+        tail: 'shiny',
         version: BATTLESNAKE_VERSION // eslint-disable-line
       }
 
