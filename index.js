@@ -52,6 +52,12 @@ function move (reqBody) {
     } else {
       move = 'up'
     }
+  } else if (you.head.x > you.head.y) {
+    if (yPositionIsEven) {
+      move = 'right'
+    } else {
+      move = 'left'
+    }
   } else {
     move = ''
   }
