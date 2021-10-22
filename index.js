@@ -46,6 +46,12 @@ function move (reqBody) {
     } else {
       move = 'left'
     }
+  } else if (you.head.y > you.head.x) {
+    if (xPositionIsEven) {
+      move = 'down'
+    } else {
+      move = 'up'
+    }
   } else {
     move = ''
   }

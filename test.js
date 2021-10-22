@@ -151,3 +151,37 @@ tap.test('moves correctly at the east wall', function (t) {
 
   t.end()
 })
+
+tap.test('moves correctly on interior vertical straightaways', function (t) {
+  const board = {
+    height: 11,
+    width: 11
+  }
+
+  const headLocationTests = [
+    { x: 0, y: board.height - 3, expected: 'down' },
+    { x: 1, y: board.height - 3, expected: 'up' },
+    { x: 2, y: board.height - 3, expected: 'down' },
+    { x: 3, y: board.height - 3, expected: 'up' },
+    { x: 4, y: board.height - 3, expected: 'down' },
+    { x: 5, y: board.height - 3, expected: 'up' },
+    { x: 6, y: board.height - 3, expected: 'down' },
+    { x: 7, y: board.height - 3, expected: 'up' }
+  ]
+
+  for (const test of headLocationTests) {
+    const game = {
+      board: board,
+      you: {
+        head: {
+          x: test.x,
+          y: test.y
+        }
+      }
+    }
+    const result = move(game)
+    t.equal(result.move, test.expected, `should move ${test.expected} at ${test.x},${test.y}`)
+  }
+
+  t.end()
+})
