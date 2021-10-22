@@ -18,6 +18,7 @@ function move (reqBody) {
 
   const isInteriorTurn = you.head.x === you.head.y
   const xPositionIsEven = you.head.x % 2 === 0
+  const yPositionIsEven = you.head.y % 2 === 0
 
   if (atNorthWestCorner) {
     move = 'down'
@@ -38,6 +39,12 @@ function move (reqBody) {
       move = 'down'
     } else {
       move = 'right'
+    }
+  } else if (atEastWall) {
+    if (yPositionIsEven) {
+      move = 'up'
+    } else {
+      move = 'left'
     }
   } else {
     move = ''
