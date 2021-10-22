@@ -14,8 +14,10 @@ function move (reqBody) {
   const atSouthEastCorner = atSouthWall && atEastWall
   // const atNorthEastCorner = atNorthWall && atEastWall
 
+  const atNorthEasement = you.head.y + 1 === board.height - 1 && !atWestWall && !atEastWall
+
   const isInteriorTurn = you.head.x === you.head.y
-  const positionIsEven = you.head.x % 2 === 0
+  const xPositionIsEven = you.head.x % 2 === 0
 
   if (atNorthWestCorner) {
     move = 'down'
@@ -24,13 +26,19 @@ function move (reqBody) {
   } else if (atSouthEastCorner) {
     move = 'up'
   } else if (isInteriorTurn) {
-    if (positionIsEven) {
+    if (xPositionIsEven) {
       move = 'right'
     } else {
       move = 'up'
     }
   } else if (atNorthWall) {
     move = 'left'
+  } else if (atNorthEasement) {
+    if (xPositionIsEven) {
+      move = 'down'
+    } else {
+      move = 'right'
+    }
   } else {
     move = ''
   }
