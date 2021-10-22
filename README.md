@@ -1,21 +1,6 @@
-# braden looper
+# nick swisher
 
-[Braden Looper](https://play.battlesnake.com/u/tphummel/braden-looper/) is my first [battlesnake](https://play.battlesnake.com). (Grey one below)
-
-[![Alt text](/braden-looper.gif)](https://play.battlesnake.com/g/87504a4f-498a-422c-9124-ccbb46586bbc/)
-
-## "Features"
-
-- Loops the game board's outer-most edge, counter clockwise.
-- Will not intentionally seek out food.
-- Will not do much else.
-
-## Notable things
-
-- Battlesnake is super cool.
-- I [deployed](https://braden-looper-battlesnake.tomhummel.com) this snake using [Cloudflare Workers](https://workers.cloudflare.com/)
-- I wrote [unit tests](/test.js) for various scenarios the snake may find itself in and what I expect it to do (or not do)
-- I added the ability to [run the snake locally](/local.js) with node.js. It is very close to the same code which runs in cloudflare.
+[Nick Swisher](https://play.battlesnake.com/u/tphummel/nick-swisher/) is my third [battlesnake](https://play.battlesnake.com). (Grey one below)
 
 ## Usage
 
@@ -40,4 +25,4 @@ curl --header "Content-Type: application/json" \
 
 ## What does the name mean?
 
-[Braden Looper](https://www.baseball-reference.com/players/l/loopebr01.shtml) is a professional baseball player who has "loop" in his name. This snake loops.
+[Nick Swisher](https://www.baseball-reference.com/players/s/swishni01.shtml) is a retired professional baseball player who has "swish" in his name. This snake swishes.
