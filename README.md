@@ -1,6 +1,6 @@
 # nick swisher
 
-[Nick Swisher](https://play.battlesnake.com/u/tphummel/nick-swisher/) is my third [battlesnake](https://play.battlesnake.com). (Grey one below)
+[Nick Swisher](https://play.battlesnake.com/u/tphummel/nick-swisher/) is my third [battlesnake](https://play.battlesnake.com).
 
 ## Usage
 
